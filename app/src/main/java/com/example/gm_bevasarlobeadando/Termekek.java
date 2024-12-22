@@ -16,4 +16,20 @@ public class Termekek {
         this.price = Math.round(fullPrice * 100) / 100.0f;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getPricePerCount() {
+        return String.valueOf(pricePerCount);
+    }
+
+    public String getCount() {
+        return String.valueOf(count);
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
 }

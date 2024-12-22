@@ -46,12 +46,10 @@ public class MainActivity extends AppCompatActivity {
         listButton = findViewById(R.id.listButton);
 
         service = RetrofitClient.getInstance().create(RetrofitService.class);
-/*
-        listButton.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, ListActivity.class);
+        listButton.setOnClickListener(e -> {
+            Intent intent = new Intent(MainActivity.this, ListViewStuff.class);
             startActivity(intent);
         });
-*/
         submitButton.setOnClickListener( e -> {
             String nameOfItem = itemName.getText().toString();
             String countOfItem = itemCount.getText().toString();

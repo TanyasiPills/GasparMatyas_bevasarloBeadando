@@ -24,8 +24,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".listActivity"></activity>
-        <activity android:name=".TermekActivity"></activity>
+        <activity android:name=".ListViewStuff"></activity>
     </application>
 
 </manifest>

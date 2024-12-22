@@ -31,7 +31,7 @@
                         android:textStyle="bold"
                         android:layout_width="wrap_content"/>
                     <TextView
-                        android:id="@+id/item_author"
+                        android:id="@+id/item_price"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="de"
@@ -67,7 +67,7 @@
                     android:focusableInTouchMode="false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/delete"
+                    android:id="@+id/modify"
                     android:text="Módosítás" />
             </LinearLayout>
         </LinearLayout>
