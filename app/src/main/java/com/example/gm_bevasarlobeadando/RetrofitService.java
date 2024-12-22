@@ -10,18 +10,18 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 public interface RetrofitService {
-    @GET("DnQYTi/bevasarlo")
-    Call<List<Termekek>> getAllTermek();
+    @GET("e9gd95/termekek")
+    Call<List<Termekek>> getTermek();
 
-    @GET("DnQYTi/bevasarlo/{id}")
+    @GET("e9gd95/termekek/{id}")
     Call <Termekek> getTermekById(@Path("id") int id);
 
-    @POST("DnQYTi/bevasarlo")
+    @POST("e9gd95/termekek")
     Call<Termekek> createTermek(@Body Termekek termek);
 
-    @PUT("DnQYTi/bevasarlo/{id}")
+    @PUT("e9gd95/termekek/{id}")
     Call<Termekek> updateTermek(@Path("id") int id, @Body Termekek termek);
 
-    @DELETE("DnQYTi/bevasarlo/{id}")
+    @DELETE("e9gd95/termekek/{id}")
     Call<Void> deleteTermek(@Path("id") int id);
 }
