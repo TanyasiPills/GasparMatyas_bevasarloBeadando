@@ -38,8 +38,8 @@ public class Adapter extends ArrayAdapter<Termekek> {
         Button modify = convertView.findViewById(R.id.modify);
 
         modify.setOnClickListener(e -> {
-            Intent intent = new Intent(Adapter.this.getContext(), modifyActivity.class);
-            intent.putExtra("index", position);
+            Intent intent = new Intent(Adapter.this.getContext(), ModifyActivity.class);
+            intent.putExtra("index", itemList.get(position).getId());
             this.context.startActivity(intent);
         });
         itemName.setText(item.getName());
