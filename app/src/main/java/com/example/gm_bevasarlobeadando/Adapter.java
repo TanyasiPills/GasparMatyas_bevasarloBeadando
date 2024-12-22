@@ -14,11 +14,13 @@ import java.util.List;
 public class Adapter extends ArrayAdapter<Termekek> {
 
     final List<Termekek> itemList;
+    Context context;
 
 
     public Adapter(Context context, List<Termekek> items){
         super(context, R.layout.list_item, items);
         this.itemList = items;
+        this.context = context;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -34,12 +36,12 @@ public class Adapter extends ArrayAdapter<Termekek> {
         TextView itemUnit = convertView.findViewById(R.id.item_unit);
 
         Button modify = convertView.findViewById(R.id.modify);
-/*
+
         modify.setOnClickListener(e -> {
-            Intent intent = new Intent(Adapter.this.getContext(), .class);
-            startActivity
+            Intent intent = new Intent(Adapter.this.getContext(), modifyActivity.class);
+            intent.putExtra("index", position);
+            this.context.startActivity(intent);
         });
-*/
         itemName.setText(item.getName());
         itemPrice.setText(item.getPricePerCount());
         itemCount.setText(String.valueOf(item.getCount()));

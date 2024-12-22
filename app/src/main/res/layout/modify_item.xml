@@ -17,20 +17,24 @@
             android:gravity="center">
             <EditText
                 android:hint="Termék neve"
+                android:id="@+id/productName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <EditText
                 android:hint="Termék száma"
+                android:id="@+id/productCount"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <EditText
                 android:hint="Termék ára"
+                android:id="@+id/productPrice"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <EditText
                 android:hint="Termék mértékegysége???"
+                android:id="@+id/productUnit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <LinearLayout
@@ -41,16 +45,19 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/backToListBUtton"
                     android:text="Vissza"
                     android:layout_margin="10sp"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/modifyButton"
                     android:text="Módosít"
                     android:layout_margin="10sp"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/deleteButton"
                     android:text="Töröl"
                     android:layout_margin="10sp"/>
             </LinearLayout>
